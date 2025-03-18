@@ -11,19 +11,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-if 'vector' not in st.session_state:
 
-    loader = PyPDFLoader("E:\Codatron\Chatbot\shoaib.pdf")
+loader = PyPDFLoader("E:\Codatron\Chatbot\shoaib.pdf")
 
-    docs = loader.load()
+docs = loader.load()
 
-    text_solitter = RecursiveCharacterTextSplitter(chunk_size = 100, chunk_overlap = 20)
+text_solitter = RecursiveCharacterTextSplitter(chunk_size = 100, chunk_overlap = 20)
 
-    split_docs = text_solitter.split_documents(docs)
+split_docs = text_solitter.split_documents(docs)
 
-    embedding = OllamaEmbeddings(model='gemma:2b')
+embedding = OllamaEmbeddings(model='gemma:2b')
 
-    vector = FAISS.from_documents(split_docs, embedding)
+vector = FAISS.from_documents(split_docs, embedding)
 
 retriever = vector.as_retriever()
 
