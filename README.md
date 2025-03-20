@@ -60,14 +60,6 @@ streamlit run chatbot.py
 2. **Retrieval Phase:** The chatbot fetches relevant information from the vector database using **similarity search**. Retrieved information is then combined with the user’s query.
 3. **Generation Phase:** The **DeepSeek R1 model** (via Groq API) generates a response.
 
-## ✨ Features
-
-✅ Retrieval-Augmented Generation (RAG) architecture
-✅ Uses **Ollama** for creating efficient embeddings
-✅ Generates responses using **DeepSeek R1 model**
-✅ Uses **LangChain** for modular AI development
-✅ Supports free API calls with **Groq API**
-
 ## 🤝 Contributors
 
 - **Md Shoaib Abdullah Khan**
