@@ -12,13 +12,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-loader = PyPDFLoader("E:\Codatron\Chatbot\shoaib.pdf")
+loader = PyPDFLoader("./shoaib.pdf")
 
 docs = loader.load()
 
-text_solitter = RecursiveCharacterTextSplitter(chunk_size = 100, chunk_overlap = 20)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size = 100, chunk_overlap = 20)
 
-split_docs = text_solitter.split_documents(docs)
+split_docs = text_splitter.split_documents(docs)
 
 embedding = OllamaEmbeddings(model='gemma:2b')
 
