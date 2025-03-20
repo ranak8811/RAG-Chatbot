@@ -15,13 +15,17 @@ This is a simple **Q&A chatbot** built using **Retrieval-Augmented Generation (R
 
 Follow these steps to set up the chatbot on your local machine:
 
-### **1. Clone the Repository**
+### **1. Fork the Repository**
+
+Go to the GitHub repository page and click on the "Fork" button in the top right corner. This will create a copy of the repository in your GitHub account.
+
+### **2. Clone the Repository**
 
 ```bash
-https://github.com/Md-Shoaib-Abdullah-Khan/RAG-Chatbot
+git clone https://github.com/your-username/RAG-Chatbot.git
 ```
 
-### **2. Create a Virtual Environment**
+### **3. Create a Virtual Environment**
 
 ```bash
 python -m venv myenv  # For Windows/Linux/Mac
@@ -29,13 +33,13 @@ source myenv/bin/activate  # Mac/Linux
 myenv\Scripts\activate  # Windows
 ```
 
-### **3. Install Dependencies**
+### **4. Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### **4. Set Up Environment Variables**
+### **5. Set Up Environment Variables**
 
 Create a `.env` file in the root directory and add the following:
 
@@ -45,10 +49,10 @@ GROQ_API_KEY=your_groq_api_key
 
 > **Note:** Never share your API key or commit it to GitHub.
 
-### **5. Run the Chatbot**
+### **6. Run the Chatbot**
 
 ```bash
-python chatbot.py
+streamlit run chatbot.py
 ```
 
 ## 📖 How It Works
@@ -59,15 +63,15 @@ python chatbot.py
 
 ## ✨ Features
 
-✅ Retrieval-Augmented Generation (RAG) architecture\
-✅ Uses **Ollama** for creating efficient embeddings\
-✅ Generates responses using **DeepSeek R1 model**\
-✅ Uses **LangChain** for modular AI development\
+✅ Retrieval-Augmented Generation (RAG) architecture
+✅ Uses **Ollama** for creating efficient embeddings
+✅ Generates responses using **DeepSeek R1 model**
+✅ Uses **LangChain** for modular AI development
 ✅ Supports free API calls with **Groq API**
 
 ## 🤝 Contributors
 
-- **Md Shoaib Abdullah Khan**&#x20;
+- **Md Shoaib Abdullah Khan**
 
 ---
 
