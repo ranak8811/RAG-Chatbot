@@ -53,8 +53,8 @@ streamlit run chatbot.py
 
 ## 📖 How It Works
 
-1. **Retrieval Phase:** The chatbot fetches relevant information using **Ollama embeddings**.
-2. **Augmentation Phase:** Retrieved information is combined with the user’s query.
+1. **Indexing Phase:** The chatbot takes input from PDFs or other sources, splits the text into chunks, converts these chunks into embeddings using **Ollama**, and stores them in a **vector database**.
+2. **Retrieval Phase:** The chatbot fetches relevant information from the vector database using **similarity search**. Retrieved information is then combined with the user’s query.
 3. **Generation Phase:** The **DeepSeek R1 model** (via Groq API) generates a response.
 
 ## ✨ Features
