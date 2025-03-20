@@ -9,7 +9,6 @@ This is a simple **Q&A chatbot** built using **Retrieval-Augmented Generation (R
 - **Python** (Recommended: 3.8+)
 - **LangChain** (for RAG framework)
 - **Ollama** (for creating embeddings)
-- **DeepSeek R1 Model** (via Groq API)
 
 ## 🛠 Installation & Setup
 
