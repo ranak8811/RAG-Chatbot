@@ -48,7 +48,7 @@ GROQ_API_KEY=your_groq_api_key
 ### **5. Run the Chatbot**
 
 ```bash
-python chatbot.py
+streamlit run chatbot.py
 ```
 
 ## 📖 How It Works
