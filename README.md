@@ -62,6 +62,7 @@ streamlit run chatbot.py
 
 ## 🤝 Contributors
 
+- **Md. Anwar Hossain Rana**
 - **Md Shoaib Abdullah Khan**
 
 ---
